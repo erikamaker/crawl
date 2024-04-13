@@ -1,0 +1,13 @@
+def open_scene
+    system("clear")  # Clear the screen
+    print "\e[?25l"
+    print "\n\n\n\n\n\n\n\n"
+    sleep 2
+    print Rainbow("	   - You wake up with a headache\n").violet
+    print Rainbow("	     on the cold, hard floor.\n\n").violet
+    sleep 3
+    Board.player.reset_input
+    Board.player.page_bottom
+    Board.player.page_top
+    Board.player.turn_page
+end
